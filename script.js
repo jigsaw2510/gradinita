@@ -2,7 +2,7 @@
 let elementsArray = document.querySelectorAll("img");
 let cardsArray = document.querySelectorAll(".flip-card");
 let w = window.innerWidth;
-
+let h1 = document.getElementsByTagName('h1');
 elementsArray.forEach(function(elem, index) {
     elem.addEventListener("load", function() {
         let realWidth = elementsArray[index].naturalWidth;
@@ -33,3 +33,8 @@ elementsArray.forEach(function(elem, index) {
     });
 });
 
+for (i=0; i<h1.length; i++) {
+  if (w <= 600) {
+            h1[i].style.fontSize = "2em";
+          }
+}

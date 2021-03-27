@@ -12,6 +12,7 @@ h1 {
 }
 div p {
 	font-size: 1.5em;
+  font-weight: bold;
 }
 .container {
 	display: flex;
@@ -24,7 +25,12 @@ div p {
 	max-height: 100%;
 	border-radius: 10px;
 }
-
+#title {
+  color: #31E981;
+  font-size: 3em !important;
+  font-weight: bold;
+  text-align: center;
+}
 /* Cards style */
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
